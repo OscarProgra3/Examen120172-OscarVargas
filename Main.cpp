@@ -79,7 +79,7 @@ int main()
 					cout<<"Ingrese el peso de la escultura: ";
 					cin>>peso;
 					string materiale;
-					cout<<"Ingrese el material de la escultura";
+					cout<<"Ingrese el material de la escultura: ";
 					cin>>materiale;
 
 					listaobras.push_back(new Esculturas(id,nombre,artista,fecha,peso,materiale));
@@ -87,11 +87,11 @@ int main()
 				if (opcagregar==3)//agregando pintura
 				{
 					string materialp;
-					cout<<"Ingrese el material del lienzo";
+					cout<<"Ingrese el material del lienzo: ";
 					cin>>materialp;	
 
 					string tecnicap;
-					cout<<"Ingrese la tecnica que se utilizo";
+					cout<<"Ingrese la tecnica que se utilizo: ";
 					cin>>tecnicap;	
 
 					listaobras.push_back(new Pinturas(id,nombre,artista,fecha,materialp,tecnicap));
@@ -99,7 +99,7 @@ int main()
 				if (opcagregar==4)//agregando diseño
 				{
 					string terreno;
-					cout<<"Ingrese el tipo de terreno";
+					cout<<"Ingrese el tipo de terreno: ";
 					cin>>terreno;
 
 
