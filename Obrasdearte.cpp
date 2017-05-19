@@ -38,7 +38,7 @@ void Obrasdearte::setArtista(string tartista)
 
 string Obrasdearte::getFecha()
 {
-	return fechaingreso
+	return fechaingreso;
 }
 void Obrasdearte::setFecha(string tfecha)
 {

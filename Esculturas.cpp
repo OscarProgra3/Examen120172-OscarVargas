@@ -1,25 +1,25 @@
-#include "Escultura.h"
+#include "Esculturas.h"
 
-Escultura::Escultura(string pid, string pnombre, string partista, string pfecha,double ppeso, string pmaterial) : Obrasdearte(pid, pnombre,  partista, pfecha)
+Esculturas::Esculturas(string pid, string pnombre, string partista, string pfecha,double ppeso, string pmaterial) : Obrasdearte(pid, pnombre,  partista, pfecha)
 {
 	peso=ppeso;
 	material=pmaterial;
 }
 
-double Escultura::getPeso()
+double Esculturas::getPeso()
 {
 	return peso;
 }
-void Escultura::setPeso(double tpeso)
+void Esculturas::setPeso(double tpeso)
 {
 	peso=tpeso;
 }
 		
-string Escultura::getMaterial()
+string Esculturas::getMaterial()
 {
 	return material;
 }
-void Escultura::setMaterial(string tmaterial)
+void Esculturas::setMaterial(string tmaterial)
 {
 	material=tmaterial;
 }

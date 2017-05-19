@@ -4,7 +4,7 @@
 #ifndef OBRASDEARTE_H
 #define OBRASDEARTE_H
 
-using namespaces std;
+using namespace std;
 
 class Obrasdearte
 {
