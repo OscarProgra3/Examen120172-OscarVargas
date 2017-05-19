@@ -106,7 +106,6 @@ int main()
 					listaobras.push_back(new Darquitectonicos(id,nombre,artista,fecha,terreno));
 				}//fin agregardiseño
 
-				
 
 			}
 
