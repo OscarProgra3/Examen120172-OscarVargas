@@ -5,15 +5,19 @@
 #include "Darquitectonicos.h"
 
 #include <string>
+#include <stdio.h>
+#include <stdlib.h>
 #include <vector>
+#include <sstream>
 
 using namespace std;
 
-
+string hexadecimal();
 void listarObras(vector <Obrasdearte*> listaobrasT);
 
 int main()
 {
+	srand(time(NULL));
 	vector<Obrasdearte*> listaobras;
 	vector<Obrasdearte*> listaotromuseo;
 
@@ -41,10 +45,9 @@ int main()
 				if (opcagregar!=5)
 				{
 					
-					cout<<"ingrese el id de la obra: ";
-					cin>>id;
+					id=hexadecimal();
 
-					
+					cout<<endl<<"ID: "<<id<<endl;
 					cout<<"ingrese el nombre de la obra: ";
 					cin>>nombre;
 
@@ -175,6 +178,39 @@ int main()
 	return 0;
 }
 
+string hexadecimal() {
+	int r;
+	stringstream random1;
+	string random2;
+	for (int i = 0; i < 6; ++i)
+	{
+		r = rand() % 15 + 0;
+		if (r == 10)
+		{
+			random1 << "A";
+		} else if (r == 11)
+		{
+			random1 << "B";
+		} else if (r == 12)
+		{
+			random1 << "C";
+		} else if (r == 13)
+		{
+			random1 << "D";
+		} else if (r == 14)
+		{
+			random1 << "E";
+		} else if (r == 15)
+		{
+			random1 << "F";
+		} else {
+			random1 << r;
+		}
+	}
+	random2 = random1.str();
+	return random2;
+}
+
 
 void listarObras(vector <Obrasdearte*> listaobrasT)
 {
@@ -191,3 +227,4 @@ void listarObras(vector <Obrasdearte*> listaobrasT)
 		cout <<endl<< "----------------------------------------------" << endl;
 	}
 }
+
